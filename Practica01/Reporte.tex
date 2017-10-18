@@ -1,0 +1,177 @@
+
+\documentclass[12pt, letterpaper, twoside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate} % enumerados
+\usepackage{multirow} % para las tablas
+\usepackage{float} % para usar [H]
+
+\title{Organizaci\'on y Arquitectura de computadoras Práctica 1}
+\author{Araujo Chávez Mauricio}
+\date{24 de Agosto de 2017}
+ 
+\begin{document}
+
+\maketitle
+
+Datos de la computadora:
+
+\begin{itemize}
+\item Fabricante y modelo de la computadora:
+  
+  Hewlett Packard, HP Notebook .
+  
+\item Fabricante, modelo, frecuencia, número de núcleos, y arquitectura del procesador:
+  
+  Intel Pentium N3540, 2.67GHz, 4 núcleos, 64 bits.
+  
+\item Capacidad de memoria RAM y de cachés de los procesadores:
+  
+  4 GB Memoria RAM, 2 MB memoria caché del procesador.
+    
+\item Capacidad del disco duro:
+  
+  1 TB de capacidad.
+  
+\item Distribución de linux y versión del kernel:
+  
+  Ubuntu 17.04, Kernel: 4.10.0-32-generic. 
+\end{itemize}
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+Nombre de la prueba & Resultado \\
+\hline \hline
+GZIP Compression & 27.28 Seconds \\ \hline
+DCRAW & 191.74 Seconds \\ \hline
+FLAC Audio Encoding & 23.90 Seconds \\ \hline
+REDIS & 386115.21 Requests Per Second \\ \hline
+Timed MrBayes Analysis & 81.41 Seconds \\ \hline
+Timed M Player Compilation & 210.01 Seconds \\ \hline
+Timed PHP Compilation & 125.24 Seconds\\ \hline
+\end{tabular}
+\caption{Resultado de las pruebas}
+\label{tabla:sencilla}
+\end{center}
+\end{table}
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+Nombre de la prueba & Resultado \\
+\hline \hline
+GZIP Compression & 26.4 Seconds \\ \hline
+DCRAW & 136.38 Seconds \\ \hline
+FLAC Audio Encoding & 20.00 Seconds \\ \hline
+REDIS & 416814.34 Requests Per Second \\ \hline
+Timed MrBayes Analysis & 42.39 Seconds \\ \hline
+Timed M Player Compilation & 233.62 Seconds \\ \hline
+Timed PHP Compilation & 117.00 Seconds\\ \hline
+\end{tabular}
+\caption{Resultado de las pruebas(2a Computadora)}
+\label{tabla:sencilla}
+\end{center}
+\end{table}
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+Nombre de la prueba & Resultado \\
+\hline \hline
+GZIP Compression & 60.69 Seconds \\ \hline
+DCRAW & 108.98 Seconds \\ \hline
+FLAC Audio Encoding & 14.00 Seconds \\ \hline
+REDIS & 752900.60 Requests Per Second \\ \hline
+Timed MrBayes Analysis & 95.70 Seconds \\ \hline
+Timed M Player Compilation & 226.43 Seconds \\ \hline
+Timed PHP Compilation & 131.60 Seconds\\ \hline
+\end{tabular}
+\caption{Resultado de las pruebas(3a Computadora)}
+\label{tabla:sencilla}
+\end{center}
+\end{table}
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+Nombre de la prueba & Resultado \\
+\hline \hline
+GZIP Compression & 40.53 Seconds \\ \hline
+DCRAW & 167.28 Seconds \\ \hline
+FLAC Audio Encoding & 32.02 Seconds \\ \hline
+REDIS & 166265.13 Requests Per Second \\ \hline
+Timed MrBayes Analysis & 78.785 Seconds \\ \hline
+Timed M Player Compilation & 295.53 Seconds \\ \hline
+Timed PHP Compilation & 142.85 Seconds\\ \hline
+\end{tabular}
+\caption{Resultado de las pruebas(4a computadora)}
+\label{tabla:sencilla}
+\end{center}
+\end{table}
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+Nombre de la prueba & Propósito \\
+\hline \hline
+GZIP Compression &  Tiempo de respuesta\\ \hline
+DCRAW & Tiempo de respuesta \\ \hline
+FLAC Audio Encoding & Tiempo de respuesta \\ \hline
+REDIS & Rendimiento \\ \hline
+Timed MrBayes Analysis & Tiempo de respuesta \\ \hline
+Timed M Player Compilation & Tiempo de respuesta \\ \hline
+Timed PHP Compilation & Tiempo de respuesta \\ \hline
+\end{tabular}
+\caption{Tipo de pruebas}
+\label{tabla:sencilla}
+\end{center}
+\end{table}
+
+\begin{description}
+  \item[Ejercicios]
+\end{description}
+Usando la medida de tendencia central adecuada y tu reporte de resultados, calcula:
+\begin{itemize}
+  \item La medida de tiempo de respuesta \\ \textbf{55.1758 segundos}
+\end{itemize}
+\begin{itemize}
+  \item La medida de rendimiento \\ \textbf{386115.21 request per second}
+\end{itemize}
+Calcula los tiempos normalizados y obtén la medida de tendencia central adecuada para cada una de las computadoras.
+\begin{itemize}
+  \item \textit{Computadora 1 y 2:} \textbf{1.21} \\ \textit{Computadora 1 y 3:} \textbf{1.09} \\ \textit{Computadora 1 y 4:} \textbf{0.78} 
+\end{itemize}
+\begin{itemize}
+  \item \textit{Computadora 2:} \textbf{45.5825 segundos} \\ \textit{Computadora 3:} \textbf{50.1897} \\ \textit{Computadora 4:} \textbf{70.6227 segundos}
+\end{itemize} 
+Plantea un caso de uso de computadora, de acuerdo a los requerimientos del usuario pondera los resultados y obten la medida de desempeño.
+\begin{itemize}
+  \item Suponemos que el ususario requiere un máximo tiempo de respuesta en compiladores y cifrados por lo tanto tendríamos: \\.25 en PHP test; .25 en MPlayer test; .25 en GZIP test; .10 en MrBayes test; .10 en DCRAW test y .5 en FLAC test. \\ De donde obtenemos los siguientes resultados: \\ \textit{Computadora 1:} \textbf{129.8975 segundos} \\ \textit{Computadora 2:} \textbf{122.132 segundos} \\ \textit{Computadora 3:} \textbf{132.148 segundos} \\ \textit{Computadora 4:} \textbf{160.344 segundos} \\ De donde podemos deducir que la computadora 2 sería la ideal para tales condiciones de trabajo.
+\end{itemize}
+
+\begin{description}
+  \item[Preguntas] 
+\end{description}
+\begin{itemize}
+  \item ¿Cuál computadora tiene el mejor tiempo de ejecución? Comparada con la peor medida, ¿Por qué factor es mejor la computadora? \\ \textit{El tiempo de ejecución de la computadora 2 es \textbf{0.64} veces más rápido que la computadora 4. Debido a la diferencia en sus frecuencias de reloj.}
+\end{itemize}
+\begin{itemize}
+  \item ¿Cuál computadora tiene el mejor rendimiento? Comparada con la peor medida, ¿Por qué factor es mejor la computadora? \\ \textit{El rendimiento de la computadora 1 es \textbf{0.51} veces mejor que la computadora 3.}
+\end{itemize}
+\begin{itemize}
+  \item De acuerdo a la computadora de referencia, ¿cuál computadora tiene el mejor desempeño y cuál computadora tiene el peor desempeño? \\ \textit{El mejor desempeño lo tiene la computadora referencia y el peor lo tiene la computadora 3.}
+\end{itemize}
+\begin{itemize}
+  \item ¿Cuál computadora tiene el mejor desempeño para el usuario planteado en el caso de uso? \\ \textit{La computadora 2.}
+\end{itemize}
+\begin{itemize}
+  \item De entre los atributos de cada máquina comparada, ¿cuáles resultan determinantes en la pérdida o ganancia de desempeño? \\ \textit{La frecuencia de reloj y los ciclos de reloj promedio por instrucción.}
+\end{itemize}
+
+\end{document}
+\grid
