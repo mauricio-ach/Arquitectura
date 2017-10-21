@@ -1,0 +1,7 @@
+Para ejecutar el programa se debe ejectuar con la opción de operación
+y el primer y segundo operando de la siguiente manera:
+opción 3 dígitos
+operandos 32 dígitos 
+
+Ejemplo:
+	$ ./a.out 010 0100001011010100101001010111 0101101000010100101000010111
